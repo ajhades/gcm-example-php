@@ -48,6 +48,6 @@
         $decodedText = html_entity_decode($jsonText);
         $myArray = json_decode($decodedText, true);
 
-
+        echo var_dump($myArray);
 
 ?>
