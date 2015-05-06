@@ -3,8 +3,8 @@
         $url = 'https://android.googleapis.com/gcm/send';
 
         $fields = array(
-            'registration_ids' => $id,
-            'data' => $load,
+            'registration_ids' => $id,// Array ids
+            'data' => $load,// Array some data to send
         );
 
         $headers = array(
@@ -42,12 +42,11 @@
         $report = array();
         // Close connection
         curl_close($ch);
-//        echo $result;
+        //echo $result; //if you want to print the pure result
         //print_r($id);
         $jsonText = preg_replace('/\s+/', '', $result);
         $decodedText = html_entity_decode($jsonText);
         $myArray = json_decode($decodedText, true);
 
-        echo var_dump($myArray);
-
+        echo var_dump($myArray);//The result a bit cleaner
 ?>
