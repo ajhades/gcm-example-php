@@ -1,6 +1,6 @@
 # gcm-example-php
 
-###Implementación de Push Notification con [AngularJS](https://angularjs.org/) - [Ionic](http://ionicframework.com/) - **PHP** ###
+###Implementación de Push Notification con AngularJS - Ionic - PHP ###
 * [AngularJS](https://angularjs.org/) 
 * [Ionic](http://ionicframework.com/)
 
